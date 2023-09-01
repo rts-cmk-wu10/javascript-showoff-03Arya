@@ -1,0 +1,94 @@
+.localstorage_div {
+    margin: auto;
+    width: 800px;
+}
+
+#clicks {
+    color: red;
+    font-size: 20px;
+}
+
+.localstorage_clickcounter {
+    font-size: 30px;
+    padding-top: 1em;
+}
+
+.localstorage_button {
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.alertOnClick_box {
+    padding: 5em 0;
+}
+
+.alertOnClick_div {
+    width: 800px;
+    margin: auto;
+}
+
+.alertButton {
+    width: 200px;
+}
+
+
+.kontaktformular_form {
+    display: grid;
+    background-color: #E3E3E3;
+    height: 280px;
+    padding: 2em 2em;
+    grid-template-rows: repeat(10, 9%);
+    row-gap: 3px;
+    width: 80%;
+    margin: auto;
+}
+
+
+#form1 input {
+    outline: none;
+    border: none;
+}
+
+.input_besked {
+    grid-row: 6/9;
+}
+
+.submit_button {
+    width: 100px;
+    grid-row: 10;
+    background-color: #ffffff;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.form_verify_div {
+    grid-row: 10;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: end;
+}
+
+#besked {
+    grid-column: 1;
+    grid-row: 10;
+    width: 200px;
+    font-size: 13px;
+    font-weight: 900;
+    color: red;
+}
+
+.searchBox {
+    width: 800px;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+.results_div {
+    text-align: center;
+    font-weight: 700;
+    background-color: rgb(234, 234, 234);
+}

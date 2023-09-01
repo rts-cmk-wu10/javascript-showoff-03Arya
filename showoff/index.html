@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showoff</title>
+    <script src="https://kit.fontawesome.com/4aaa23cc72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Showoff</h1>
+        <p class="windowLeave">Try dragging your mouse out of the window</p>
+        <style>
+            .windowLeave {
+                text-align: center;
+            }
+        </style>
+
+    </header>
+
+    <article class="localstorage_box">
+        <div class="localstorage_div">
+
+            <p class="localstorage_clickcounter">Number of clicks:</p>
+            <p id="clicks"></p>
+            <p><button class="localstorage_button" onclick="clickCounter()" type="button">Click me!</button></p>
+
+            <br>
+            <p>
+                Click the button to see the counter increase. <br>
+                Close the browser tab (or window), and try again, and the counter will continue to count (is not
+                reset).
+            </p>
+        </div>
+    </article>
+
+
+    <article class="guess_aNumber_box">
+        <style>
+            html {
+                font-family: sans-serif;
+            }
+
+            body {
+                width: 50%;
+                max-width: 800px;
+                min-width: 480px;
+                margin: 0 auto;
+            }
+
+            .form input[type="number"] {
+                width: 200px;
+            }
+
+            .lowOrHi {
+                width: 80%;
+                padding: 5px 0;
+            }
+
+            .lastResult {
+                padding: 0.5em 0;
+                font-weight: bold;
+                color: #000000;
+            }
+
+            .guess_aNumber_box {
+                padding: 2em 0;
+            }
+        </style>
+        <h4>Guess a number!</h4>
+
+        <p>We have generated a number between 1 and 100. Prove that you can guess the number in 10 or less turns.<br> Vi
+            We will show you if your guess is too high or too low.</p>
+
+        <div class="form">
+            <label for="guessField">Write a number: </label>
+            <input type="number" min="1" max="100" required id="guessField" class="guessField" id="guessField">
+            <input type="submit" value="Tilføj mit gæt!" class="guessSubmit" id="guessSumbit">
+        </div>
+
+        <div class="resultParas">
+            <p class="guesses" id="guesses">Your number: </p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi" id="lowOrHi"></p>
+    </article>
+
+
+    <article class="alertOnClick_box">
+        <div class="alertOnClick_div">
+
+            <button class="alertButton">Hover here</button>
+            <p>Not a scam..</p>
+
+        </div>
+    </article>
+
+
+
+    <article class="kontaktformular_box">
+        <form id="form1" class="kontaktformular_form" action="index.html" method="get">
+            <label class="label_name" for="name">For- og efternavn</label>
+            <input name="name" id="name" class="input_name" type="text">
+            <label class="label_email" for="email">Emailadresse</label>
+            <input name="email" id="email" class="input_email" type="text">
+            <label class="label_besked" for="comment">Besked</label>
+            <input name="comment" id="comment" class="input_besked" type="text">
+
+            <div class="form_verify_div">
+                <input id="submit" class="submit_button" type="submit" value="Send!">
+                <p id="besked"></p>
+            </div>
+        </form>
+    </article>
+    <footer>
+        <p>Styled and made with JS :D</p>
+    </footer>
+    <article class="searchBox">
+        <form class="searchForm">
+            <h3>Search movies here</h3>
+            <label>
+                Search
+                <input class="searchForm__input" type="search" name="search">
+            </label>
+            <button type="submit">Search</button>
+            <p>Scroll down to see results</p>
+            <span class="movie_output"></span>
+        </form>
+    </article>
+</body>
+
+</html>
